@@ -13,6 +13,7 @@ build-backend = "setuptools.build_meta"
 ```
 
 Then you can add informations some package information. **Name** and **versions** are mandatory, the rest of it is optional.
+
 The [dynamic](https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html#dynamic-metadata) argument allows specific options. Here we use the **dependecies** option to specify a requirements.txt file for the necessary package for the project. 
 
 ```python 
@@ -32,7 +33,9 @@ dynamic = ["dependencies"]
 dependencies = {file = ["requirements.txt"]}
 ```
 
-## Package Installation
+## Package Creation
+
+### Generation
 
 Now you can generate a distributution (tar.gz and .whl in the dist directory) of your package.
 
@@ -48,4 +51,16 @@ Then you can install your package by going at the root of your project and typin
 python -m build
 ```
 
+### Installation
+
 You can give one of the distribution (.whl or tar.gz file) to someone who can use your package by pip install it.
+
+### (optional) Development mode
+
+If you want to work on your package and use as well the modifications you are doing, you can install in your environment the package in an editable mode. This allows you to modify your source code and have the changes take effect without you having to rebuild and reinstall. 
+
+Go to the root of your package and type
+
+```python
+pip install --editable .
+```
