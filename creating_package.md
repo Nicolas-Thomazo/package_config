@@ -33,6 +33,18 @@ dynamic = ["dependencies"]
 dependencies = {file = ["requirements.txt"]}
 ```
 
+## License
+
+#### Why
+
+When you release a package you should add a license to your package. A well known open source license is the [MIT License](https://choosealicense.com/licenses/mit/), it is for open source project.
+
+If you don't know how to choose [here](https://choosealicense.com/) is a website to choose a license depending on your project.
+
+#### How
+
+Just add the text of the license in a file name **LICENSE** at the root of your project.
+
 ## Package Creation
 
 ### Generation
