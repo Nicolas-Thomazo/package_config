@@ -1,7 +1,7 @@
 # 🚀 Package creation with pip
 > How to create a python package 
 
-![Package](img/package.jpeg)
+<img src="img/package.jpeg" alt="Description de l'image" width="400">
 
 **Table of Contents**
 
