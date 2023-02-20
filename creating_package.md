@@ -1,4 +1,19 @@
-# Package creation with pip
+# 🚀 Package creation with pip
+> How to create a python package 
+
+![Package](img/package.jpeg)
+
+**Table of Contents**
+
+- [Setup config](#setup-config)
+- [License](#license)
+    + [Why](#why)
+    + [How](#how)
+- [Package Creation](#package-creation)
+  * [Generation](#generation)
+  * [Installation](#installation)
+  * [(optional) Development mode](#-optional--development-mode)
+
 
 ## Setup config
 
