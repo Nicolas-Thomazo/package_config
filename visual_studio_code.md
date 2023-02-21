@@ -48,3 +48,16 @@ At the root of your project, add a folder name .vscode if it doesn't exist and t
 ## SSH connection
 
 ## Extensions
+ 
+ - autoDocstring [Nils Werner] : generate docstring automatically
+ - GitLens [GitKraken]
+ - Jupyter [ms-toolsai]
+ - Python [Microsoft]
+ - Rainbow Brackets [2gua]
+ - indent-rainbow [oderwat]
+ - Pylance [Microsoft]
+ - Git Graph [mhutchie]
+ - Rainbow CSV [mechatroner]
+ - Gitignore [codezombie]
+ - Vim [vscodevim] : vim emulator
+ 
