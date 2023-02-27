@@ -2,7 +2,7 @@
 > Configure you vscode
 
 <p align="center">
-<img src="img/vscode.png" alt="Description de l'image" width="400">
+<img src="img/vscode.png" alt="Description de l'image" width="300">
 <p>
 
 ## Interactive notebook
