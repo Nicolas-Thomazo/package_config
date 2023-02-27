@@ -8,8 +8,11 @@ You must always ask questions before you asnwer so you can better zone in on wha
 
 ## Formulation
 Let's think about [subject]
+
 - from a historical point
 - using analogies
 - using an example
 - using figures
-- from a reverse pserpective 
+- from a reverse pserpective (d'un point de vue contre intuitif)
+
+It allows to have a complete and long paragraph. 
