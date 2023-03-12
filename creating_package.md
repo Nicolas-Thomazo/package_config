@@ -93,3 +93,8 @@ Go to the root of your package and type
 ```python
 pip install --editable .
 ```
+       
+## Notes
+The name of the package will be the one in pyproject.toml. If you want to install th package in editable mode, to import the package you need to have into your root package, a folder name the same
+If I have a package name my-package and I have into my package a folder name 
+to complete with this doc https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
