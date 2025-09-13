@@ -81,4 +81,5 @@ You can also add a keybindings.json file at the root folder. This will enable th
  - Gitignore [codezombie]
  - Vim [vscodevim] : vim emulator
  - ErrorLens [Alexander]: highlight error in vscode terminal
+ - Ruff [astral.sh]: To replace Flake8 (plus dozens of plugins), Black, isort, pyupgrade
  
