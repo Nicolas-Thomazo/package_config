@@ -6,22 +6,18 @@
     //
     // Color
     "workbench.colorCustomizations": {
-        "menu.background": "#1a2588",
-        "activityBar.activeBackground": "#1a2588",
-        "activityBar.background": "#1a2588",
-        "sash.hoverBorder": "#1a2588",
-        "statusBar.background": "#1a2588",
-        "statusBarItem.hoverBackground": "#1a2588",
-        "statusBarItem.remoteBackground": "#1a2588",
-        "titleBar.activeBackground": "#1a2588",
-        "titleBar.inactiveBackground": "#1a2588",
+        "activityBar.background": "#a51b1b",
+        "activityBar.activeBackground": "#850b0b",
+        "statusBar.background": "#a51b1b",
+        "titleBar.activeBackground": "#a51b1b",
+        "titleBar.inactiveBackground": "#a51b1b",
+        "menu.background": "#850b0b",
+        "statusBarItem.remoteBackground": "#850b0b",
     },
     //Location of side bar to avoid jump in code when opening and closing it
     "workbench.editor.enablePreview": false,
     "workbench.editor.tabSizing": "shrink",
-    "workbench.panel.defaultLocation": "right",
     "workbench.settings.editor": "json",
-    "workbench.sideBar.location": "right",
     //
     // ####################################
     // ############## Pylance #############
@@ -43,7 +39,7 @@
     //
     "ruff.nativeServer": "on",
     "editor.formatOnSave": true,
-    "files.autoSave": "afterDelay",
+    // "files.autoSave": "afterDelay",
     "editor.linkedEditing": true,
     "[python]": {
         "editor.defaultFormatter": "charliermarsh.ruff",
