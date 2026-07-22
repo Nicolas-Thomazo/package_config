@@ -1,0 +1,43 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "lsp": {
+    "ruff": {
+      "command": ["ruff", "server"],
+      "filetypes": ["python"],
+      "extensions": [".py"],
+      "root_markers": ["pyproject.toml", "ruff.toml", ".git"]
+    },
+    "ty": {
+      "command": ["ty", "server"],
+      "filetypes": ["python"],
+        "extensions": [".py"],
+      "root_markers": ["pyproject.toml", ".git"]
+    },
+    "pyright": {
+      "disabled": true
+    }
+  },
+  "permission": {
+    "edit": "allow",
+    "webfetch": "allow",
+    "bash": {
+      "*": "allow",
+      "rm *": "ask"
+    },    "skill": {
+      "*": "allow",
+      "experimental-*": "ask"
+    }
+  },
+  "provider": {
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "http://localhost:11434/v1"
+      },
+      "models": {
+        "qwen3.5:9b": {}
+      }
+    }
+  }
+
+}
