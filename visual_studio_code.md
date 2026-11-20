@@ -12,37 +12,54 @@ At the root of your project, add a folder name .vscode if it doesn't exist and t
  
 ```json
 {
-    "terminal.integrated.rightClickBehavior": "paste",
-    "terminal.integrated.copyOnSelection": false
-    //Color of side and top bar
-    "workbench.colorCustomizations": {
-        "titleBar.activeBackground": "#bc6c25",
-        "activityBar.background": "#bc6c25"
-    },
+    // Formatage et sauvegarde automatiques
+    "editor.formatOnSave": true,
     "files.autoSave": "afterDelay",
-    "python.formatting.provider": "black",
     "editor.linkedEditing": true,
+    "editor.cursorBlinking": "phase",
+    // Comportement du terminal intégré (copier à la sélection, coller au clic droit)
+    "terminal.integrated.rightClickBehavior": "paste",
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.commandsToSkipShell": [
+        "-workbench.action.quickOpen"
+    ],
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    // Interface et disposition des panneaux (barre latérale à droite pour éviter le décalage du code)
     "debug.toolBarLocation": "docked",
-    //Location of side bar to avoid jump in code when opening and closing it
     "workbench.editor.enablePreview": false,
     "workbench.editor.tabCloseButton": "right",
     "workbench.editor.tabSizing": "shrink",
+    "workbench.editor.tabActionLocation": "right",
     "workbench.panel.defaultLocation": "right",
     "workbench.settings.editor": "json",
     "workbench.sideBar.location": "right",
-    //When scrolling in coding markdown windows, scroll also in priew ctrl+shift+v to get preview
+    // Synchronisation du défilement entre l'éditeur Markdown et l'aperçu (Ctrl+Shift+V)
     "markdown.preview.scrollEditorWithPreview": true,
     "markdown.preview.scrollPreviewWithEditor": true,
-    "editor.cursorBlinking": "phase",
+    // Python : Ruff comme formateur par défaut, correction du lint et tri des imports à la sauvegarde
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": "explicit",
+            "source.organizeImports.ruff": "explicit"
+        }
+    },
+    // Python : analyse du code et exécution des tests avec pytest
+    "python.analysis.extraPaths": [
+        "./src"
+    ],
     "python.testing.pytestArgs": [
         "tests"
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
     "esbonio.sphinx.confDir": "",
-    "python.analysis.extraPaths": [
-        "./src"
-    ],
+    // Extension Vim : laisser VS Code gérer Ctrl+P (Quick Open) et Ctrl+W (fermer l'onglet)
+    "vim.handleKeys": {
+        "<C-p>": false,
+        "<C-w>": false,
+    }
 }
 ```
 
@@ -82,4 +99,5 @@ You can also add a keybindings.json file at the root folder. This will enable th
  - Vim [vscodevim] : vim emulator
  - ErrorLens [Alexander]: highlight error in vscode terminal
  - Ruff [astral.sh]: To replace Flake8 (plus dozens of plugins), Black, isort, pyupgrade
+ - ty [astral.sh]
  
