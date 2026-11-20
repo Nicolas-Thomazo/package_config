@@ -21,7 +21,8 @@ At the root of your project, add a folder name .vscode if it doesn't exist and t
     "terminal.integrated.rightClickBehavior": "paste",
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.commandsToSkipShell": [
-        "-workbench.action.quickOpen"
+        "-workbench.action.quickOpen",
+        "workbench.action.toggleSidebarVisibility"
     ],
     "terminal.integrated.defaultProfile.linux": "zsh",
     // Interface et disposition des panneaux (barre latérale à droite pour éviter le décalage du code)
@@ -55,11 +56,13 @@ At the root of your project, add a folder name .vscode if it doesn't exist and t
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
     "esbonio.sphinx.confDir": "",
-    // Extension Vim : laisser VS Code gérer Ctrl+P (Quick Open) et Ctrl+W (fermer l'onglet)
+    // Extension Vim : laisser VS Code gérer Ctrl+P (Quick Open), Ctrl+W (fermer l'onglet) et Ctrl+B (barre latérale)
     "vim.handleKeys": {
         "<C-p>": false,
         "<C-w>": false,
-    }
+        "<C-b>": false,
+    },
+    "vim.useSystemClipboard": true
 }
 ```
 
