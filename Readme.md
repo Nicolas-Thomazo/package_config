@@ -7,6 +7,7 @@
 - [🚀 Make a python package](creating_package.md)
 - [💻 Shell configuration](shell_config.md)
 - [🌱 Visual Studio Code configuration](visual_studio_code.md)
+- [ Opencode configuration](opencode.md)
 
 
 
